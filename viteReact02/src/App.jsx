@@ -10,9 +10,22 @@ function App() {
   
   //let counter=15
    const addValue=()=>{
+    {/*
    counter =counter+1;   // but  doing this only , will not work so we need to use hooks which will do a particular work
-   apnaCounter(counter);
-   }
+   apnaCounter(counter);  
+    */}
+    apnaCounter(counter+1);
+    apnaCounter(counter+1);
+    apnaCounter(counter+1);// NOTE-> riting multiple same lines will not change the value in one click
+   
+    // But same thing can be done using call back fn
+  {/*
+    apnaCounter((myCounter)=>myCounter+1)
+    apnaCounter((myCounter)=>myCounter+1)
+    apnaCounter((myCounter)=>myCounter+1)
+    apnaCounter((myCounter)=>myCounter+1)
+  */}
+  }
  const count=document.getElementById('count')
    const subtractValue=()=>{
     if(counter<0){
